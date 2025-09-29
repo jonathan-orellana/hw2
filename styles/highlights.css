@@ -3,13 +3,12 @@
   flex-direction: column;
 }
 
-.highlight-sections {
+.highlight-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .highlights h2 {
@@ -18,32 +17,39 @@
   margin-bottom: 48px;
 }
 
-.highlight-section img {
+.highlight-box {
+  flex: 1 1 400px;
+  background: white;
+  padding: 40px;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2px solid rgb(224, 224, 224);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.highlight-box:hover {
+  border-color: var(--primary-color);
+  transform: scale(1.02);
+  background-color: white;
+}
+
+.highlight-box img {
   width: 200px;
   height: 200px;
 }
 
-.highlight-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgb(200, 200, 200);
-  border-radius: 20px;
-  width: 400px;
-  height: 400px;
-}
-
-.highlight-section h3 {
+.highlight-box h3 {
   font-size: 24px;
   margin-bottom: 24px;
 }
 
-.highlight-section p {
+.highlight-box p {
   margin-bottom: 28px;
+  display: block;
 }
 
-.highlight-section a {
+.highlight-box a {
   text-decoration: none;
   color: var(--primary-color);
 }
