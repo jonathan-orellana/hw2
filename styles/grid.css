@@ -1,9 +1,13 @@
-/* Box model reset */
+:root {
+  --primary-color: #FF2C2C;
+  --text-color: black;
+  --background-color: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
 
-/* Grid row */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -11,15 +15,14 @@
   margin-right: -12px;
 }
 
-/* Default: all columns full width (mobile-first) */
 [class*="col-"] {
   width: 100%;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* Tablet breakpoint (≥768px) */
 @media only screen and (min-width: 768px) {
+
   .col-md-1 {
     width: calc(100% * 1 / 12);
   }
@@ -69,8 +72,8 @@
   }
 }
 
-/* Desktop breakpoint (≥992px) */
 @media only screen and (min-width: 992px) {
+
   .col-lg-1 {
     width: calc(100% * 1 / 12);
   }
@@ -120,7 +123,49 @@
   }
 }
 
-/* Optional: hide element on very small screens */
+@media only screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 50px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+  
+  #menu-icon {
+    display: block;
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    background: var(--primary-color);
+    border-top: 2px solid rgba(0, 0, 0, 0.105);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 16px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #fadeshow {
     display: none;
