@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #FF2C2C;
+  --text-color: black;
+  --background-color: #ffffff;
+}
+
+.reading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reading-image {
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.reading-text h2 {
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.reading-text h2 span {
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+.reading-text h3 {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.book-list {
+  list-style-type: none;  
+  padding: 0;             
+  margin: 0; 
+}
+
+.book-list li {
+  margin-bottom: 8px;     
+}
+
+.book-list a {
+  text-decoration: none;   
+  color: inherit;      
+}
+
+.book-list a:hover {
+  color: var(--primary-color);      
+}
+
+.book-list img {
+  width: 250px;           
+  height: auto;          
+  vertical-align: middle; 
+  margin-right: 8px;     
+}
+
+.book-item {
+  display: flex;          
+  flex-direction: column; 
+  margin-bottom: 32px;  
+}
+
+.book-item a {
+  margin-bottom: 16px;    
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/header.css">
+
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">
+      <div class="logo">Carlos <span>Orellana</span></div>
+    </a>
+    <nav class="navbar">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Reading</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+  <section class="contact" id="contact">
+    <h2 class="heading">
+      Contact <span>Me</span>
+    </h2>
+    <form action="https://formspree.io/f/xkgvkajk" method="POST">
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Subject">
+      </div>
+
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+
+  </section>
+</body>
+</html>

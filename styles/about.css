@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-image {
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.about-text h2 {
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.about-text h2 span {
+  font-size: 60px;
+  color: var(--primary-color);
+}
