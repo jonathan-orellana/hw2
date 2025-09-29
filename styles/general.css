@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 10rem;
+
+}
+
+.highlight-section {
+  min-height: auto;
+}

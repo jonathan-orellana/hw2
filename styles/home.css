@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-image {
+  object-fit: cover;
+  object-position: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.home-text h2 {
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.home-text h3 {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.home-text h3 span {
+  font-size: 48px;
+  color: var(--primary-color);
+}

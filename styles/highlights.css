@@ -1,0 +1,54 @@
+.highlights {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.highlights h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.highlight-section img {
+  width: 200px;
+  height: 200px;
+}
+
+.highlight-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.highlight-section h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.highlight-section p {
+  margin-bottom: 28px;
+}
+
+.highlight-section a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.cellphone img {
+  width: 140px;
+  height: 140px;
+}

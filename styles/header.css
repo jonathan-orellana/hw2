@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #FF2C2C;
+  --secondary-color: #2ecc71;
+  --text-color: black;
+  --background-color: #ffffff;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  transform: scale(1.1) translateY(-5px);
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
